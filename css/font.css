@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;500;700;900&display=swap');
+
+@font-face {
+    /* 폰트 이름 설정 : 저장된 파일에서 확장자 명을 제외 */
+    font-family: 'Amalfi Coast';
+    
+    /* 폰트 경로 설정 */ 
+    src: url('../font/Amalfi Coast.ttf');
+
+}
+

@@ -1,0 +1,67 @@
+*{font-family: 'Roboto','Noto Sans KR'; letter-spacing: -1.5px; box-sizing: border-box;}
+html{font-size: 62.5%;}
+.inner{max-width: 1200px; margin: 0 auto;}
+.eng{letter-spacing: 0px;}
+body{background-color: #f5f5f5;}
+
+@media screen and (max-width: 767px){ /* 모바일 */
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){ /* 태블릿 */
+}
+@media screen and (min-width: 1024px){ /* PC */
+}
+
+header{position: fixed; top: 0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; width: 100%; margin: 0 auto; padding: 0 5.255%; border-bottom: 1px solid #c8c8c8; background-color: #fff;}
+header h1{display: inline-block;}
+header h1 img{width: 100%;}
+header .mui{display: none;}
+header nav{display: inline-block; width: 50%; text-align: center;}
+header nav ul{width: 100%;}
+header nav ul li{display: inline-block; width: 24%;}
+header nav ul li a{color: #141414; font-size: 2.0rem; font-weight: 500; line-height: 80px;}
+header nav ul li a:hover{color: #ef4023;}
+header nav ul li a.active{color: #ef4023;}
+header .location{display: inline-block;}
+header .location img{vertical-align: middle; margin-right: 4px;}
+header .location a{display: inline-block; color: #969696; font-size: 2.0rem; font-weight: 500; line-height: 80px; vertical-align: middle;}
+
+.quick_menu{position: fixed; bottom: 8.256%; left: 50%; margin-left: 31.53%; z-index: 999;}
+.quick_menu .menu ul{position: absolute; bottom: 124px; z-index: -1; height: 0px; text-align: center;}
+.quick_menu .menu:hover ul{height: 564px;}
+.quick_menu .menu ul li{position: relative; margin-bottom: 12px; transform: translateX(20px); opacity: 0;}
+.quick_menu .menu:hover ul li{transform: translateX(0px); transition-duration: 0.3s; opacity: 1;}
+.quick_menu .menu:hover ul li:nth-child(1){transition-delay: 0.9s;}
+.quick_menu .menu:hover ul li:nth-child(2){transition-delay: 0.75s;}
+.quick_menu .menu:hover ul li:nth-child(3){transition-delay: 0.6s;}
+.quick_menu .menu:hover ul li:nth-child(4){transition-delay: 0.45s;}
+.quick_menu .menu:hover ul li:nth-child(5){transition-delay: 0.3s;}
+.quick_menu .menu:hover ul li:nth-child(6){transition-delay: 0.15s;}
+.quick_menu .menu ul li a{position: absolute; top: 0; left: 0; width: 80px; border-radius: 80px; background-color: rgba(0, 0, 0, 0.6); color: #fff; font-size: 1.5rem; font-weight: 700; line-height: 80px; text-align: center; opacity: 0;}
+.quick_menu .menu ul li:hover a{opacity: 1;}
+.quick_menu .menu > span{display: inline-block; width: 80px; height: 80px; background-color: transparent; cursor: pointer;}
+.quick_menu > span{display: block; width: 27px; height: 30px; margin: 12px auto 0; cursor: pointer;}
+
+footer{padding: 56px 0; background-color: #323232;}
+footer .inner{display: flex; justify-content: space-between;}
+footer .info{display: inline-block;}
+footer .info h2{display: inline-block; vertical-align: top; margin-right: 48px;}
+footer .info h2 img{width: 100%;}
+footer .info div{display: inline-block; vertical-align: top;}
+footer .info div p{margin-bottom: 16px; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 2.0rem; letter-spacing: -1px;}
+footer .info div p span{letter-spacing: 0;}
+footer .info div button{margin-right: 8px; border: none; background-color: #1e1e1e;}
+footer .info div button a{display: block; width: 136px; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 3.0rem; letter-spacing: -0.5px;}
+footer .sns{position: relative; display: inline-block;}
+footer .sns div ul{overflow: hidden; position: absolute; bottom: 88px; left: 0; padding: 0px 0; width: 180px; height: 0px; background-color: #fff; transition-duration: 0.3s;}
+footer .sns div.active ul{padding: 14px 0; height: 133px;}
+footer .sns div ul li a{display: block; padding: 10px 16px; color: #141414; font-size: 1.5rem; font-weight: 300;}
+footer .sns div ul li a:hover{background-color: #f5f5f5;}
+footer .sns div span{position: relative; display: inline-block; width: 180px; height: 36px; border: 1px solid #969696; padding: 0 16px; margin-bottom: 16px; color: #fff; font-size: 1.6rem; font-weight: 700; line-height: 3.6rem; cursor: pointer;}
+footer .sns div span:after{content: ''; clear: both; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 9px; height: 5px; background: url("../images/icon_footer_arrow_down.png") no-repeat center center;}
+footer .sns div.active span:after{content: ''; clear: both; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 9px; height: 5px; background: url("../images/icon_footer_arrow_up.png") no-repeat center center;}
+footer .sns ol li{display: inline-block; margin-left: 8px;}
+footer .sns ol li a{display: inline-block; width: 32px; height: 32px; border-radius: 32px;}
+footer .sns ol li:nth-child(1) a{background: url("../images/icon_sns_01.png") no-repeat center center #969696; text-indent: -9999px;}
+footer .sns ol li:nth-child(2) a{background: url("../images/icon_sns_02.png") no-repeat center center #969696; text-indent: -9999px;}
+footer .sns ol li:nth-child(3) a{background: url("../images/icon_sns_03.png") no-repeat center center #969696; text-indent: -9999px;}
+footer .sns ol li:nth-child(4) a{background: url("../images/icon_sns_04.png") no-repeat center center #969696; text-indent: -9999px;}

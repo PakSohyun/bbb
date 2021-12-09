@@ -1,0 +1,62 @@
+.visual_wrap{background: url("../images/oksusutea_bg_01.png") no-repeat top center;}
+.visual_wrap .visual_tit{position: absolute; top: 440px; left: 10%; z-index: 9;}
+.visual_wrap .visual_tit p{margin-bottom: 64px; color: #7daa41; font-size: 2.5rem; font-weight: 400;}
+.visual_wrap .img_box{top: 107px; right: 11%;}
+.tit > span{color: #7daa41; font-size: 2.5rem; font-weight: 400;}
+
+.itro{margin-bottom: 200px;}
+.itro .inner{display: flex; align-items: flex-end;}
+.itro .img_box{width: 79%; margin:0 10.5% 0 -30%; transform: translateX(-120px); opacity: 0; transition-duration: 1s;}
+.itro .img_box.active{transform: translateX(0px); opacity: 1;}
+.itro .img_box img{max-width: 100%; padding-bottom: 80px;}
+.itro .text{position: relative; }
+.itro .text:after{content: 'Oksusutea'; clear: both; position: absolute; top: -60%; left: -60%; z-index: 99; color: #7daa41; font-family: 'Amalfi Coast'; font-size: 9.0rem; font-style: italic; letter-spacing: 0;}
+
+.brand{margin-bottom: 200px;}
+.brand .img_box{display: flex;}
+.brand .img_box img:nth-child(1){width: 23.5%; height: fit-content; margin: -10% 2% 0 0; transform: translateY(100px); opacity: 0; transition-duration: 1s;}
+.brand .img_box img:nth-child(2){width: 23.5%; height: fit-content; margin: -18% 2% 0 0; transform: translateY(100px); opacity: 0; transition-duration: 1s; transition-delay: 0.5s;}
+.brand .img_box img:nth-child(3){width: 49%; transform: translateX(100px); opacity: 0; transition-duration: 1s; transition-delay: 1.0s;}
+.brand .img_box.active img:nth-child(1){transform: translateY(0px); opacity: 1;}
+.brand .img_box.active img:nth-child(2){transform: translateY(0px); opacity: 1;}
+.brand .img_box.active img:nth-child(3){transform: translateX(0px); opacity: 1;}
+.brand .text{width: 56%; margin: -10.834% 0 0 17%; word-break: keep-all;}
+
+.sales{margin-bottom: 200px; text-align: center;}
+.sales .text{display: block; }
+.sales .text .tit{margin-bottom: 96px;}
+.sales .img_box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 94px; opacity: 0; transition-duration: 1s;}
+.sales .img_box.active{opacity: 1;}
+.sales .img_box .left{position: relative; width: 32%; margin-left: 8.5%;}
+.sales .img_box .right{position: relative; width: 32%; margin-right: 8.5%;}
+.sales .img_box .left .numb{position: absolute; bottom: 0; z-index: 99; width: 100%; opacity: 0; transition-duration: 0.6s; transition-delay: 2.4s;}
+.sales .img_box .right .numb{position: absolute; bottom: 0; z-index: 99; width: 100%; opacity: 0; transition-duration: 0.6s; transition-delay: 6.0s;}
+.sales .img_box.active .numb{opacity: 1;}
+.sales .img_box .numb p{width: 100%; border-radius: 80px; background-color: #323232; color: #fff; font-size: 4.0rem; font-weight: 900; line-height: 8.0rem;}
+.sales .img_box .numb p > span{font-size: 2.5rem;}
+.sales .img_box .left > img,.sales .img_box .right > img{position: absolute; left: 50%; transform: translateX(-50%); z-index: 9;}
+.sales .img_box .left > img:nth-of-type(1){opacity: 0; transition-duration: 0.5s; transition-delay: 1s;}
+.sales .img_box .left > img:nth-of-type(2){opacity: 0; transition-duration: 0.5s; transition-delay: 1.2s;}
+.sales .img_box .left > img:nth-of-type(3){opacity: 0; transition-duration: 0.5s; transition-delay: 1.4s;}
+.sales .img_box.active .left > img:nth-of-type(1){opacity: 1;}
+.sales .img_box.active .left > img:nth-of-type(2){opacity: 1;}
+.sales .img_box.active .left > img:nth-of-type(3){opacity: 1;}
+.sales .img_box > img{opacity: 0; transition-duration: 0.5s; transition-delay: 3.4s;}
+.sales .img_box.active > img{opacity: 1;}
+.sales .img_box .right > img:nth-of-type(1){opacity: 0; transition-duration: 0.5s; transition-delay: 4.6s;}
+.sales .img_box .right > img:nth-of-type(2){opacity: 0; transition-duration: 0.5s; transition-delay: 4.8s;}
+.sales .img_box .right > img:nth-of-type(3){opacity: 0; transition-duration: 0.5s; transition-delay: 5.0s;}
+.sales .img_box.active .right > img:nth-of-type(1){opacity: 1;}
+.sales .img_box.active .right > img:nth-of-type(2){opacity: 1;}
+.sales .img_box.active .right > img:nth-of-type(3){opacity: 1;}
+.sales .img_box .bg{position: relative;}
+.sales .img_box .bg span{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); display: inline-block; width: 110%; height: 110%; border-radius: 384px; background-color: transparent; border: 8px solid #7daa41;}
+.sales .img_box .right .bg span{border: 8px solid #787878;}
+.sales .img_box > img{height: fit-content;}
+.sales .inner > p{width: 59%; margin: 0 auto; color: #141414; font-size: 1.6rem; font-weight: 300; line-height: 2.5rem;}
+
+.history .more > div.active h5 span{color: #7daa41;}
+.history .history_slide .swiper-wrapper .swiper-slide figure figcaption span{background-color: #7daa41;}
+body{background: url("../images/oksusutea_bg_02.png") no-repeat bottom center;}
+
+
