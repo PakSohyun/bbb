@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    scroll_page();
     control_mouse();
+    scroll_page();
     slide();
 });
 
