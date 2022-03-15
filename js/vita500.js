@@ -19,7 +19,7 @@ $(document).ready(function(){
     if($(window).outerWidth() < 768){
       $(window).scroll(function(){
         var $scrollTop = $(window).scrollTop();
-        var $img_offset = ($($target).offset().top)-1000;
+        var $img_offset = ($($target).offset().top)-300;
         if($scrollTop > $img_offset){
           $($target).addClass("active");
         }
