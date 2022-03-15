@@ -20,7 +20,18 @@ function scrolltop(){
 function click($target){
   $($target).click(function(){
     $(this).parent().toggleClass("active");            
-  });    
+  });
+  
+  if($(window).outerWidth() < 768){
+    $(".banner_wrap .slide_05 .img_box img").attr("src","images/main_product_05_m.png");
+    $(".banner_wrap .slide_04 .img_box img").attr("src","images/main_product_04.png");
+    $(".banner_wrap .slide_03 .img_box img").attr("src","images/main_product_03_m.png");
+
+    $(".mui").click(function(){
+      $(this).toggleClass("active");            
+      $("header nav").toggleClass("active");            
+    });
+  }
 }
 
 function button($target){

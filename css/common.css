@@ -1,31 +1,26 @@
 *{font-family: 'Roboto','Noto Sans KR'; letter-spacing: -1.5px; box-sizing: border-box;}
 html{font-size: 62.5%;}
-.inner{max-width: 1200px; margin: 0 auto;}
+html, body{width: 100%; height: 100%;}
+.inner{max-width: 120.0rem; margin: 0 auto;}
 .eng{letter-spacing: 0px;}
 body{background-color: #f5f5f5;}
-
-@media screen and (max-width: 767px){ /* 모바일 */
-}
-@media screen and (min-width: 768px) and (max-width: 1023px){ /* 태블릿 */
-}
-@media screen and (min-width: 1024px){ /* PC */
-}
 
 header{position: fixed; top: 0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; width: 100%; margin: 0 auto; padding: 0 5.255%; border-bottom: 1px solid #c8c8c8; background-color: #fff;}
 header h1{display: inline-block;}
 header h1 img{width: 100%;}
 header .mui{display: none;}
-header nav{display: inline-block; width: 50%; text-align: center;}
-header nav ul{width: 100%;}
-header nav ul li{display: inline-block; width: 24%;}
-header nav ul li a{color: #141414; font-size: 2.0rem; font-weight: 500; line-height: 80px;}
+header nav{display: inline-block; width: 48%; text-align: center;}
+header nav ul{display: flex; justify-content: space-between; width: 100%; font-size: 0;}
+header nav ul li{display: inline-block;}
+header nav ul li.nav_m{display: none;}
+header nav ul li a{color: #141414; font-size: 2.0rem; font-weight: 500; line-height: 8.0rem;}
 header nav ul li a:hover{color: #ef4023;}
 header nav ul li a.active{color: #ef4023;}
 header .location{display: inline-block;}
 header .location img{vertical-align: middle; margin-right: 4px;}
-header .location a{display: inline-block; color: #969696; font-size: 2.0rem; font-weight: 500; line-height: 80px; vertical-align: middle;}
+header .location a{display: inline-block; color: #969696; font-size: 2.0rem; font-weight: 500; line-height: 8.0rem; vertical-align: middle;}
 
-.quick_menu{position: fixed; bottom: 8.256%; left: 50%; margin-left: 31.53%; z-index: 999;}
+.quick_menu{position: fixed; bottom: 8.256%; left: 50%; margin-left: 600px; z-index: 999;}
 .quick_menu .menu ul{position: absolute; bottom: 124px; z-index: -1; height: 0px; text-align: center;}
 .quick_menu .menu:hover ul{height: 564px;}
 .quick_menu .menu ul li{position: relative; margin-bottom: 12px; transform: translateX(20px); opacity: 0;}
@@ -36,32 +31,72 @@ header .location a{display: inline-block; color: #969696; font-size: 2.0rem; fon
 .quick_menu .menu:hover ul li:nth-child(4){transition-delay: 0.45s;}
 .quick_menu .menu:hover ul li:nth-child(5){transition-delay: 0.3s;}
 .quick_menu .menu:hover ul li:nth-child(6){transition-delay: 0.15s;}
-.quick_menu .menu ul li a{position: absolute; top: 0; left: 0; width: 80px; border-radius: 80px; background-color: rgba(0, 0, 0, 0.6); color: #fff; font-size: 1.5rem; font-weight: 700; line-height: 80px; text-align: center; opacity: 0;}
+.quick_menu .menu ul li a{position: absolute; top: 0; left: 0; width: 80px; border-radius: 80px; background-color: rgba(0, 0, 0, 0.6); color: #fff; font-size: 15px; font-weight: 700; line-height: 80px; text-align: center; opacity: 0;}
 .quick_menu .menu ul li:hover a{opacity: 1;}
 .quick_menu .menu > span{display: inline-block; width: 80px; height: 80px; background-color: transparent; cursor: pointer;}
 .quick_menu > span{display: block; width: 27px; height: 30px; margin: 12px auto 0; cursor: pointer;}
 
-footer{padding: 56px 0; background-color: #323232;}
+footer{padding: 5.6rem 0; background-color: #323232;}
 footer .inner{display: flex; justify-content: space-between;}
 footer .info{display: inline-block;}
-footer .info h2{display: inline-block; vertical-align: top; margin-right: 48px;}
+footer .info h2{display: inline-block; vertical-align: top; margin-right: 4.8rem;}
 footer .info h2 img{width: 100%;}
 footer .info div{display: inline-block; vertical-align: top;}
-footer .info div p{margin-bottom: 16px; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 2.0rem; letter-spacing: -1px;}
+footer .info div p{margin-bottom: 1.6rem; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 2.0rem; letter-spacing: -1px;}
 footer .info div p span{letter-spacing: 0;}
-footer .info div button{margin-right: 8px; border: none; background-color: #1e1e1e;}
-footer .info div button a{display: block; width: 136px; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 3.0rem; letter-spacing: -0.5px;}
+footer .info div button{margin-right: 0.8rem; border: none; background-color: #1e1e1e;}
+footer .info div button a{display: block; width: 13.6rem; color: #fff; font-size: 1.2rem; font-weight: 300; line-height: 3.0rem; letter-spacing: -0.5px;}
 footer .sns{position: relative; display: inline-block;}
-footer .sns div ul{overflow: hidden; position: absolute; bottom: 88px; left: 0; padding: 0px 0; width: 180px; height: 0px; background-color: #fff; transition-duration: 0.3s;}
-footer .sns div.active ul{padding: 14px 0; height: 133px;}
-footer .sns div ul li a{display: block; padding: 10px 16px; color: #141414; font-size: 1.5rem; font-weight: 300;}
+footer .sns div ul{overflow: hidden; position: absolute; bottom: 8.8rem; left: 0; padding: 0px 0; width: 18.0rem; height: 0px; background-color: #fff; transition-duration: 0.3s;}
+footer .sns div.active ul{padding: 1.4rem 0; height: 13.3rem;}
+footer .sns div ul li a{display: block; padding: 1.0rem 1.6rem; color: #141414; font-size: 1.5rem; font-weight: 300;}
 footer .sns div ul li a:hover{background-color: #f5f5f5;}
-footer .sns div span{position: relative; display: inline-block; width: 180px; height: 36px; border: 1px solid #969696; padding: 0 16px; margin-bottom: 16px; color: #fff; font-size: 1.6rem; font-weight: 700; line-height: 3.6rem; cursor: pointer;}
+footer .sns div span{position: relative; display: inline-block; width: 18.0rem; height: 3.6rem; border: 1px solid #969696; padding: 0 1.6rem; margin-bottom: 16px; color: #fff; font-size: 1.6rem; font-weight: 700; line-height: 3.6rem; cursor: pointer;}
 footer .sns div span:after{content: ''; clear: both; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 9px; height: 5px; background: url("../images/icon_footer_arrow_down.png") no-repeat center center;}
 footer .sns div.active span:after{content: ''; clear: both; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 9px; height: 5px; background: url("../images/icon_footer_arrow_up.png") no-repeat center center;}
 footer .sns ol li{display: inline-block; margin-left: 8px;}
-footer .sns ol li a{display: inline-block; width: 32px; height: 32px; border-radius: 32px;}
+footer .sns ol li a{display: inline-block; width: 3.2rem; height: 3.2rem; border-radius: 3.2rem;}
 footer .sns ol li:nth-child(1) a{background: url("../images/icon_sns_01.png") no-repeat center center #969696; text-indent: -9999px;}
 footer .sns ol li:nth-child(2) a{background: url("../images/icon_sns_02.png") no-repeat center center #969696; text-indent: -9999px;}
 footer .sns ol li:nth-child(3) a{background: url("../images/icon_sns_03.png") no-repeat center center #969696; text-indent: -9999px;}
 footer .sns ol li:nth-child(4) a{background: url("../images/icon_sns_04.png") no-repeat center center #969696; text-indent: -9999px;}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    html{font-size: 50%;}
+    .inner{max-width: 104.0rem;}
+    header h1 img{width: 80%;}
+    .quick_menu{margin-left: 416px; bottom: 40px;}
+    footer .info h2{margin-right: 0;}
+    footer .info h2 img{width: 80%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html{font-size: 50%;}
+    .inner{padding: 0 40px;}
+    header h1{width: 16%;}
+    header nav{width: 50%;}
+    footer .info h2{margin-right: 4.0rem; width: 20%;}
+}
+@media screen and (max-width: 767px) {
+    html{font-size: 50%;}
+    header{padding: 18px 24px;}
+    header h1{width: 35%;}
+    header .mui{position: absolute; right: 24px; z-index: 9999; display: inline-block;}
+    header .mui span{display: block; width: 32px; height: 3px; background-color: #141414; transition-duration: 0.2s;}
+    header .mui span:not(:last-child){margin-bottom: 5px;}
+    header .mui.active span:nth-child(1){transform: rotate(45deg) translateX(5px) translateY(6px);}
+    header .mui.active span:nth-child(2){opacity: 0;}
+    header .mui.active span:nth-child(3){transform: rotate(-45deg) translateX(5px) translateY(-6px);}
+    header nav{display: none; position: absolute; top: 0; left: 0; z-index: -99;}
+    header nav.active{display: block;}
+    header nav ul{display: block; position: fixed; width: 100%; height: 100%; padding: 96px 32px; background-color: #fff; text-align: left;}
+    header nav ul li{display: block; width: 100%;}
+    header nav ul li:not(:last-child){border-bottom: 1px solid #c8c8c8;}
+    header nav ul li.nav_m{display: block;}
+    header nav ul li.nav_m img{vertical-align: sub; padding-left: 8px;}
+    header nav ul li a{padding: 0 8px; font-size: 2.4rem; line-height: 9.6rem;}
+    header .location{position: absolute; left: 32px; bottom: 0; width: 100%; height: 100%;}
+    .inner{padding: 0 24px;}
+    footer{padding: 3.2rem; text-align: center;}
+    footer .info div p{margin-bottom: 0;}
+    header .location,.quick_menu,footer .info h2,footer .info button,footer .sns{display: none;}
+}

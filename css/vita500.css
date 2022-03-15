@@ -1,51 +1,97 @@
-.visual_wrap{background: url("../images/vita500_bg_01.png") no-repeat top center; margin-bottom: 180px;}
-.visual_wrap .visual_tit p{margin-bottom: 64px; color: #ffb41e; font-size: 2.5rem; font-weight: 400;}
-.visual_wrap .img_box{top: 111px; right: -10%;}
+body{background: url("../images/vita500_bg_02.png") no-repeat bottom -500px center/100%;}
+
+.visual_wrap{overflow: hidden; background: url("../images/vita500_bg_01.png") no-repeat top center/100%; margin-bottom: 18.0rem;}
+.visual_wrap .visual_tit p{margin-bottom: 6.4rem; color: #ffb41e; font-size: 2.5rem; font-weight: 400;}
+.visual_wrap .img_box{top: 11.1rem; right: -10%;}
 .tit > span{color: #ffb41e; font-size: 2.5rem; font-weight: 400;}
 
-.concept{position: relative; margin-bottom: 200px;}
+.concept{overflow: hidden; position: relative; margin-bottom: 20.0rem;}
 .concept:after{content: 'CONCEPT'; clear: both; position: absolute; top: 0; left: 50%; z-index: -1; transform: translateX(-50%); color: #f5f5f5; font-size: 20.0rem; font-weight: 900;}
-.concept .inner{display: flex; align-items: center; justify-content: center; padding: 100px 0 0; transform: translateY(100px); opacity: 0; transition-duration: 1s;}
+.concept .inner{display: flex; align-items: center; justify-content: center; padding: 10.0rem 0 0; transform: translateY(10.0rem); opacity: 0; transition-duration: 1s;}
 .concept .inner.active{transform: translateY(0px); opacity: 1;}
 .concept .text{width: 41%; word-break: keep-all;}
-.concept .text p:first-of-type{margin-bottom: 24px;}
+.concept .text p:first-of-type{margin-bottom: 2.4rem;}
 .concept .img_box{margin-right: 4%;}
 
-.vision{margin-bottom: 200px;}
+.vision{overflow: hidden; margin-bottom: 20.0rem;}
 .vision .inner{display: flex; justify-content: flex-start; align-items: flex-end;}
 .vision .text{position: relative; width: 41%; word-break: keep-all;}
 .vision .text:after{content: 'Vita500'; clear: both; position: absolute; top: -45%; left: -52%; z-index: 99; color: #ffb41e; font-family: 'Amalfi Coast'; font-size: 9.0rem; font-style: italic; letter-spacing: 0;}
 .vision .text p{letter-spacing: -1.6px;}
-.vision .text p:first-of-type{margin-bottom: 24px;}
-.vision .img_box{display: inline-block; width: 49%; margin-right: 10.5%; padding: 0 0 80px 0; transform: translateX(-120px); opacity: 0; transition-duration: 1s;}
+.vision .text p:first-of-type{margin-bottom: 2.4rem;}
+.vision .img_box{display: inline-block; width: 49%; min-width: 440px; margin-right: 10.5%; padding: 0 0 8.0rem 0; transform: translateX(-12.0rem); opacity: 0; transition-duration: 1s;}
 .vision .img_box.active{transform: translateY(0px); opacity: 1;}
 
-.recommend{overflow: hidden; position: relative; display: flex; justify-content: space-between; margin-bottom: 200px; align-items: center;}
-.recommend:after{content: 'VITA500'; clear: both; position: absolute; top: 0; left: 90px; z-index: -1; transform: rotate(90deg) translateX(-50%); transform-origin: left; color: #fff; text-shadow: -1px 0 #e6e6e6, 1px 0 #e6e6e6, 0 -1px #e6e6e6, 0 1px #e6e6e6; font-size: 28.0rem; font-weight: 900;}
+.recommend{overflow: hidden; position: relative; display: flex; justify-content: space-between; margin-bottom: 20.0rem; align-items: center;}
+.recommend:after{content: 'VITA500'; clear: both; position: absolute; top: 37.4%; left: 9.0rem; z-index: -1; transform: rotate(90deg) translateX(-50%); transform-origin: left; color: #fff; text-shadow: -1px 0 #e6e6e6, 1px 0 #e6e6e6, 0 -1px #e6e6e6, 0 1px #e6e6e6; font-size: 23.0rem; font-weight: 900;}
 .recommend .inner{display: flex; align-items: center;}
 .recommend .text{width: 33%; margin-right: 10.5%; text-align: center;}
-.recommend .text div:last-of-type{display: inline-block;}
-.recommend .text div:last-of-type div{display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; height: 200px; border-radius: 100px 100px 5px 100px; background-color: #f0aa1e; mix-blend-mode: multiply;}
-.recommend .text div:last-of-type div.second{transform: translateY(-20px);}
-.recommend .text div:last-of-type div.last{transform: translateY(-40px);}
+.recommend .text div:last-of-type{display: inline-block; margin-bottom: -2.0rem;}
+.recommend .text div:last-of-type div{display: flex; flex-direction: column; align-items: center; justify-content: center; width: 20.0rem; height: 20.0rem; border-radius: 100px 100px 5px 100px; background-color: #f0aa1e; mix-blend-mode: multiply;}
+.recommend .text div:last-of-type div.second{transform: translateY(-2.0rem);}
+.recommend .text div:last-of-type div.last{transform: translateY(-4.0rem);}
 .recommend .text div:last-of-type div h5{margin-bottom: 8px; color: rgba(255,255,255,0.4); font-size: 4.0rem; font-weight: 900;}
 .recommend .text div:last-of-type div p{color: #fff; font-size: 1.6rem; line-height: 2.5rem; font-weight: 300; letter-spacing: -1px;}
-.recommend .img_box{font-size: 0; margin-right: -29.5%; transform: translateX(120px); opacity: 0; transition-duration: 1s;}
-.recommend .img_box.active{width: 87.5%; transform: translateX(0px); opacity: 1;}
-.recommend .img_box.active img{min-width: 880px;}
+.recommend .img_box{overflow: hidden; font-size: 0; width: 87.5%; margin-right: -29.5%; transform: translateX(12.0rem); opacity: 0; transition-duration: 1s;}
+.recommend .img_box img{min-width: 880px;}
+.recommend .img_box.active{transform: translateX(0px); opacity: 1;}
 
-.model_slide_wrap{position: relative; margin-bottom: 300px; opacity: 0; transition-duration: 1s;}
+.model_slide_wrap{position: relative; margin-bottom: 30.0rem; opacity: 0; transition-duration: 1s;}
 .model_slide_wrap.active{opacity: 1;}
 .model_slide_wrap > div{overflow: hidden;}
-.model_slide_wrap:after{content: 'Jennie x'; clear: both; position: absolute; bottom: -40px; right: 520px; z-index: 99; color: #323232; font-family: 'Amalfi Coast'; font-size: 8.0rem; font-style: italic; letter-spacing: 0;}
-.model_slide_wrap:before{content: 'Vita500'; clear: both; position: absolute; bottom: -40px; right: 10px; z-index: 99; color: #ffb41e; font-family: 'Amalfi Coast'; font-size: 7.5rem; font-style: italic; letter-spacing: 0;}
+.model_slide_wrap:after{content: 'Jennie x'; clear: both; position: absolute; bottom: -40px; right: 52.0rem; z-index: 99; color: #323232; font-family: 'Amalfi Coast'; font-size: 8.0rem; font-style: italic; letter-spacing: 0;}
+.model_slide_wrap:before{content: 'Vita500'; clear: both; position: absolute; bottom: -40px; right: 1.0rem; z-index: 99; color: #ffb41e; font-family: 'Amalfi Coast'; font-size: 7.5rem; font-style: italic; letter-spacing: 0;}
 .model_slide_wrap .vita500_slide{display: flex; animation: slide 30s linear infinite;}
 .model_slide_wrap .vita500_slide .model_swiper-wrapper{display: flex;}
-.model_slide_wrap .vita500_slide .model_swiper-wrapper .model_swiper-slide{width: 480px; margin: 0 12px;}
+.model_slide_wrap .vita500_slide .model_swiper-wrapper .model_swiper-slide{width: 48.0rem; margin: 0 1.2rem;}
 .model_slide_wrap .vita500_slide .model_swiper-wrapper .model_swiper-slide img{max-width: 100%;}
-@keyframes slide{0%{transform: translateX(0%);} 100%{transform: translateX(-132.6%);}}
+@keyframes slide{0%{transform: translateX(0%);} 100%{transform: translateX(-50%);}}
 
 .history .more > div.active h5 span{color: #ffb41e;}
 .history .history_slide .swiper-wrapper .swiper-slide figure figcaption span{background-color: #ffb41e;}
-body{background: url("../images/vita500_bg_02.png") no-repeat bottom center;}
 
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    body{background: url("../images/vita500_bg_02.png") no-repeat bottom -50px center/100%;}
+    .visual_wrap .img_box{top: 165px; right: -13%; width: 75%;}
+    .recommend .tit > span{display: inline-block; width: 80%;}
+    .recommend:after{display: none;}    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{background: url("../images/vita500_bg_02.png") no-repeat bottom 0px center/120%;}
+    .visual_wrap .img_box{top: 19.7rem; right: -4%; width: 65%;}
+    .concept .inner{padding: 10.0rem 40px 0;}
+    .concept .img_box{margin-right: 0%;}
+    .vision .img_box{min-width: 400px; margin-right: 40px;}
+    .vision .text:after{top: -30%; left: -75%; font-size: 8.0rem;}
+    .recommend .tit > span{display: inline-block; width: 80%;}
+    .recommend .text{margin-right: 40px;}
+    .recommend:after{display: none;}
+    .recommend .img_box img{min-width: 720px; transform: translateX(-8%);}    
+}
+@media screen and (max-width: 767px) {
+    body{background: url("../images/vita500_bg_02.png") no-repeat bottom 0px center/190%;}
+    .visual_wrap{background: url("../images/vita500_bg_01.png") no-repeat top 32px center/100%; margin-bottom: 14.4rem;}
+    .visual_wrap:before{content: ''; clear: both; position: absolute; top: 0; display: block; background-color: #ffb41e; width: 100%; height: 32px;}
+    .visual_wrap .img_box{top: 42.4rem; left: 47%; right: 0; transform: translateX(-50%); width: 115%;}
+    .concept{margin-bottom: 14.4rem;}
+    .concept:after{display: none;}
+    .concept .inner{padding: 0rem 20px 0; flex-direction: column}
+    .concept .text{width: 100%; text-align: center;}
+    .concept .img_box{margin-right: 0%; margin-bottom: 5.6rem;}
+    .vision{margin-bottom: 14.4rem;}
+    .vision .inner{flex-direction: column}
+    .vision .text{width: 100%; text-align: center;}
+    .vision .text:after{top: -28%; left: 50%; transform: translateX(-50%); font-size: 7.2rem;}
+    .vision .img_box{min-width: auto; width: 100%; margin-right: 0; margin-bottom: 5.6rem; padding: 0;}
+    .recommend{margin-bottom: 14.4rem;}
+    .recommend .inner{flex-direction: column}
+    .recommend .tit > span{display: inline-block; width: 80%;}
+    .recommend .text{margin-right: 0; margin-bottom: 5.6rem; width: 100%;}
+    .recommend:after{display: none;}
+    .recommend .img_box{width: 100%; margin-right: 0;}
+    .recommend .img_box img{min-width: auto; max-width: none; width: 180%; transform: translateX(-8%);}
+    .model_slide_wrap{margin-bottom: 18.4rem;}
+    .model_slide_wrap:before{right: 0rem; font-size: 4.8rem;}
+    .model_slide_wrap:after{right: 14.0rem; bottom: 4.0rem; font-size: 5.6rem;}
+}

@@ -1,8 +1,8 @@
 *{font-family: 'Roboto','Noto Sans KR'; letter-spacing: -1.5px; box-sizing: border-box;}
 html{font-size: 62.5%;}
 html ::-webkit-scrollbar{display: none;}
-html, body{height: 100%; overflow: hidden;}
-.inner{max-width: 1200px; margin: 0 auto;}
+html, body{width: 100%; height: 100%; overflow: hidden;}
+.inner{max-width: 120.0rem; margin: 0 auto;}
 .eng{letter-spacing: 0px;}
 
 header{position: absolute; top: 0; left: 0; z-index: 99; margin: 0 auto; width: 100%; padding: 60px 5.209%;}
@@ -10,7 +10,7 @@ header h1{display: inline-block;}
 header h1 img{width: 100%;}
 header h1 span{display: inline-block; text-indent: -99999px;}
 
-.scroll_page{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background-color: rgba(0,0,0,0.9); transition-duration: 0.6s; cursor: default;}
+.scroll_page{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99999; background-color: rgba(0,0,0,0.9); transition-duration: 0.6s; cursor: default;}
 .scroll_page div{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); text-align: center;}
 .scroll_page img{width: 35%; margin-bottom: 5px; animation: scoll_icon 1.5s 0.5s;}
 .scroll_page p{color: #fff; font-size: 2.0rem;}
@@ -24,10 +24,10 @@ main .sec .main_tit{position: absolute; top: 50%; left: 0; z-index: 99; transfor
 main .sec .main_tit h3{transform: translateY(30px); margin-bottom: 4.8rem; color: #141414; font-size: 10.0rem; font-weight: 700; line-height: 11.0rem; transition-duration: 1s; transition-delay: 0.5s; opacity: 0; cursor: default;}
 main .sec .main_tit h3 span{transform: translateY(30px); text-shadow: -1px 0 #141414, 1px 0 #141414, 0 -1px #141414, 0 1px #141414; transition-duration: 1s; opacity: 0;}
 main .sec .main_tit p{transform: translateY(30px); margin-bottom: 9.6rem; font-size: 3.5rem; font-weight: 400; transition-duration: 1s; transition-delay: 1.5s; opacity: 0; cursor: default;}
-main .sec .main_tit button{transform: translateY(30px); width: 282px; background-color: transparent; border: 1px solid #141414; border-radius: 50px; transition-duration: 1s; transition-delay: 2.5s; opacity: 0;}
-main .sec .main_tit button a{display: block; color: #141414; font-size: 2.5rem; font-weight: 700; line-height: 6.0rem;}
+main .sec .main_tit button{transform: translateY(30px); background-color: transparent; border: 1px solid #141414; border-radius: 50px; transition-duration: 1s; transition-delay: 2.5s; opacity: 0;}
+main .sec .main_tit button a{display: block; padding: 0 8.4rem; color: #141414; font-size: 2.5rem; font-weight: 700; line-height: 6.0rem;}
 main .sec .img_box{position: absolute; bottom: 18%; left: 42%; z-index: 99; transition-duration: 0.8s; transition-delay: 2.5s; opacity: 0;}
-main .sec .img_box img{width: 100%;}
+main .sec .img_box img{width: 100%; height: 100%;}
 main .sec .bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition-duration: 0.6s;}
 main .sec .bg img:nth-child(1){position: absolute; top: 0; left: 0; animation: bg 2.3s linear infinite alternate;}
 main .sec .bg img:nth-child(2){position: absolute; bottom: 0; right: 0; animation: bg2 2.3s linear infinite alternate;}
@@ -35,7 +35,7 @@ main .sec .bg img:nth-child(2){position: absolute; bottom: 0; right: 0; animatio
 main .sec.active{opacity: 1;}
 main .sec.active .main_tit h3{transform: translateY(0px); opacity: 1;}
 main .sec.active .main_tit h3 span{transform: translateY(0px); opacity: 1;}
-main .sec.active .main_tit p{transform: translateY(0px); margin-bottom: 9.6rem; font-size: 3.5rem; font-weight: 400; opacity: 1;}
+main .sec.active .main_tit p{transform: translateY(0px); opacity: 1;}
 main .sec.active .main_tit button{transform: translateY(0px); opacity: 1;}
 main .sec.active .img_box{opacity: 1;}
 main .sec.active .bg{opacity: 1;}
@@ -55,7 +55,8 @@ main .sec_03 .img_box{bottom: 19%;}
 main .sec_04{background-color: #f8f8f8;}
 main .sec_04 .main_tit h3 span{color: #f8f8f8;}
 main .sec_04 .main_tit p{color: #969696;;}
-main .sec_04 .img_box{bottom: 22%; left: 36%;}
+main .sec_04 .main_tit p br{display: none;}
+main .sec_04 .img_box{display: none;}
 main .sec_05{background-color: #f0f0f0;}
 main .sec_05 .main_tit h3 span{color: #f0f0f0;}
 main .sec_05 .main_tit p{color: #323232;}
@@ -66,9 +67,10 @@ main .sec_06 .main_tit p{color: #9b7841;}
 main .sec_06 .img_box{bottom: 22%; left: 36%;}
 @keyframes bg{0%{transform: translate3d(-12px,0,0);} 50%{transform: translate3d(-12px,-12px,0);} 100%{transform: translate3d(0,-12px,0);}}
 @keyframes bg2{0%{transform: translate3d(12px,0,0);} 50%{transform: translate3d(12px,12px,0);} 100%{transform: translate3d(0,12px,0);}}
-.slide_wrap{position: absolute; top: -3%; left: 50%; margin-left: 21.875%; z-index: 999; display: flex; flex-direction: column;}
+.pagination{display: none;}
+.slide_wrap{position: absolute; top: -3%; left: 50%; margin-left: 21.875%; z-index: 9999; display: flex; flex-direction: column;}
 main .main_slide .slide{position: relative; display: flex; justify-content: center; align-items: center; width: 180px; height: 180px; margin-bottom: 32px; border-radius: 180px;}
-main .main_slide .slide a{position: absolute; top: 0; left: 0; z-index: 99; width: 180px; border-radius: 180px; padding: 64px 0; text-align: center; color: #fff; font-size: 2.0rem; font-weight: 700; line-height: 2.6rem; background-color: rgba(0, 0, 0, 0.6); transition-duration: 0.6s; opacity: 0;}
+main .main_slide .slide a{position: absolute; top: 0; left: 0; z-index: 99; width: 100%; height: 100%; border-radius: 180px; padding: 64px 0; text-align: center; color: #fff; font-size: 2.0rem; font-weight: 700; line-height: 2.6rem; background-color: rgba(0, 0, 0, 0.6); transition-duration: 0.6s; opacity: 0;}
 main .main_slide .slide:hover a{opacity: 1;}
 main .main_slide .slide a span{font-weight: 300;}
 main .main_slide .slide_01{background-color: #ffb41e;}
@@ -77,7 +79,6 @@ main .main_slide .slide_03{background-color: #b4191e;}
 main .main_slide .slide_04{background-color: #969696;}
 main .main_slide .slide_05{background-color: #323232;}
 main .main_slide .slide_06{background-color: #9b7841;}
-
 
 footer{position: absolute; bottom: 0; left: 0; z-index: 999; margin: 0 auto; padding: 60px 0; width: 100%;}
 footer h2{display: inline-block; margin-right: 4%;}
@@ -92,4 +93,81 @@ footer ul li:nth-child(3){background: url("../images/icon_sns_03.png") no-repeat
 footer ul li:nth-child(4){background: url("../images/icon_sns_04.png") no-repeat center center #969696;}
 footer ul li a{display: inline-block; width: 32px; height: 32px;  text-indent: -99999px;}
 
-
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+    html{font-size: 50%;}
+    header h1 img{width: 85%;}
+    main .sec .bg img{width: 45%;}
+    main .sec .img_box img{width: 85%;}
+    footer h2 img{width: 90%;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    html{font-size: 50%;}
+    .inner{max-width: 104.0rem;}
+    header h1 img{width: 80%;}
+    main .sec .bg img{width: 45%;}
+    main .sec .img_box img{width: 75%;}
+    main .sec .main_tit h3{margin-bottom: 4.0rem; font-size: 9.6rem; line-height: 10.4rem;}
+    .slide_wrap{top: -7%; left: 50%; margin-left: 27.344%;}
+    main .main_slide .slide{width: 160px; height: 160px; margin-bottom: 32px; border-radius: 160px;}
+    footer h2{margin-right: 0;}
+    footer h2 img{width: 80%;}
+    footer p{margin-right: 3%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html{font-size: 50%;}
+    .inner{max-width: 85.0rem;}
+    header{padding: 50px 40px;}
+    header h1 img{width: 85%;}
+    .scroll_page{display: none;}
+    main{position: relative;}
+    main .sec .bg img{width: 60%;}
+    main .sec .img_box{bottom: 15%; left: 50%; transform: translateX(-50%); width: 50%; text-align: center;}
+    main .sec .main_tit{top: 17%; left: 50%; transform: translateY(0) translateX(-50%); width: 100%; text-align: center;}
+    main .sec .main_tit h3{margin-bottom: 3.2rem;}
+    main .sec .main_tit p{margin-bottom: 8.0rem;}
+    main .sec_03 .main_tit{top: 13%;}
+    main .sec_03 .img_box{width: 65%; bottom: 10%;}
+    main .sec_04 .img_box{display: block;}
+    main .sec_04 .img_box{width: 60%;}
+    main .sec_05 .img_box{width: 55%; bottom: 10%;}
+    main .sec_06 .img_box{width: 70%; bottom: 18%;}
+    .pagination{position: absolute; top: 50px; right: 40px; z-index: 9999; display: inline-block;}
+    .pagination ul li{ display: inline-block; margin: 0 5px; width: 10px; height: 10px; border-radius: 10px; background-color: rgba(0,0,0,0.3); text-indent: 99999px;}
+    .pagination ul li.active{background-color: #141414;}
+    .slide_wrap{display: none;}
+    footer .inner{display: flex; justify-content: space-between;}
+    footer h2{display: none;}
+}
+@media screen and (max-width: 767px) {
+    html{font-size: 50%;}
+    .inner{max-width: 39.0rem;}
+    header{padding: 40px 40px; text-align: center;}
+    header h1{width: 45%;}
+    .scroll_page{display: none;}
+    main{position: relative;}
+    main .sec .bg img{width: 70%;}
+    main .sec .img_box{bottom: 15%; left: 50%; transform: translateX(-50%); z-index: 0; width: auto; height: 30%; text-align: center;}
+    main .sec .img_box img{width: auto;}
+    main .sec .main_tit{top: 20%; left: 50%; transform: translateY(0) translateX(-50%); width: 100%; text-align: center;}
+    main .sec .main_tit h3{margin-bottom: 2.4rem; font-size: 5.6rem; font-weight: 700; line-height: 6.4rem;}
+    main .sec .main_tit p{margin-bottom: 5.6rem; font-size: 2.4rem;}
+    main .sec .main_tit button a{padding: 0 4.8rem; font-size: 2.4rem; line-height: 5.6rem;}
+    main .sec_03 .main_tit,main .sec_04 .main_tit{top: 16%;}
+    main .sec_04 .main_tit p{line-height: 3.2rem;}
+    main .sec_04 .main_tit p br{display: inline-block;}
+    main .sec_06 .main_tit h3 span{font-size: 5.0rem;}
+    main .sec_01 .img_box{left: 53%;}
+    main .sec_03 .img_box{height: 28%; bottom: 13%;}
+    main .sec_04 .img_box{display: block;}
+    /* main .sec_04 .img_box{height: 28%; bottom: 14%;} */
+    main .sec_05 .img_box{height: 32%; bottom: 12%;}
+    main .sec_06 .img_box{height: 18%; bottom: 20%;}
+    .pagination{position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); z-index: 9999; display: inline-block;}
+    .pagination ul li{ display: inline-block; margin: 0 5px; width: 10px; height: 10px; border-radius: 10px; background-color: rgba(0,0,0,0.3); text-indent: 99999px;}
+    .pagination ul li.active{background-color: #141414;}
+    .slide_wrap{display: none;}
+    footer{padding: 24px 0;}
+    footer .inner{text-align: center;}
+    footer .inner p{margin-right: 0;}
+    footer h2,footer ul{display: none;}
+}

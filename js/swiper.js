@@ -36,4 +36,28 @@ function history_slide($target,$target2,$target3){
       prevEl: $target3 ,
     },
   });
+  if($(window).outerWidth() < 1024){
+    var swiper = new Swiper($target, {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      observer:true,
+      observeParent:true,
+      navigation: {
+        nextEl: $target2,
+        prevEl: $target3 ,
+      },
+    });
+  }
+  if($(window).outerWidth() < 768){
+    var swiper = new Swiper($target, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      observer:true,
+      observeParent:true,
+      navigation: {
+        nextEl: $target2,
+        prevEl: $target3 ,
+      },
+    });
+  }
 }

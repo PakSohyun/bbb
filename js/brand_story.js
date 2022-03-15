@@ -1,17 +1,19 @@
 $(document).ready(function(){
-    control_mouse();
-    slide();
-    click();
-  });
+  control_mouse();
+  slide();
+  click();
+});
 
-  function control_mouse(){
-    $(document).bind("contextmenu", function(e){return false;});  // 마우스 우 클릭 금지
-    $(document).bind('selectstart', function() {return false;}); // 드래그 클릭 금지
+function control_mouse(){
+  $(document).bind("contextmenu", function(e){return false;});  // 마우스 우 클릭 금지
+  $(document).bind('selectstart', function() {return false;}); // 드래그 클릭 금지
 }
 
 function slide(){  
+    var $width = ($(".model_swiper-wrapper").width()*2);
     var $slide_clone = $(".model_swiper-wrapper").clone();
     $(".model_swiper-wrapper").after($slide_clone);
+    $(".model_swiper-wrapper").parent().css("width",$width);
 }
 
 function click(){  
