@@ -135,6 +135,7 @@
     .list_wrap .search_wrap .select div ul{top: 2.4rem; height: auto; border: none; background-color: transparent; text-align: center;}
     .list_wrap .search_wrap .select div ul li{display: inline-block; padding: 6px 16px; margin: 2px 1px; background-color: #969696; border-radius: 50px; color: #fff; font-size: 1.4rem;}
     .list_wrap .search_wrap .select div ul li.active{background-color: #ef4023;}
+    .list_wrap .search_wrap .select div ul li:hover{background-color: transparent;}
     .list_wrap .search_wrap .search{width: 100%;}
     .list_wrap .list > ul > li{width: 48%; height: 32.0rem; margin-bottom: 1.6rem;}
     .list_wrap .list > ul > li a figure{justify-content: center;}
