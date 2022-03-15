@@ -121,6 +121,7 @@ header nav ul li a{margin: 0 35px; color: #fff; font-size: 2.0rem; font-weight: 
     .inner{padding: 0 20px;}
     .tit{margin-bottom: 4.8rem;}
     .tit h4{font-size: 4.5rem; line-height: 5.6rem; margin-bottom: 1.6rem;}
+    .tit > span{line-height: 3.2rem;}
     header{padding: 20px;}
     header h1{width: 35%;}
     header nav{width: 75%;}
@@ -133,7 +134,7 @@ header nav ul li a{margin: 0 35px; color: #fff; font-size: 2.0rem; font-weight: 
     .visual_wrap nav ul li{width: auto; font-size: 1.8rem;}
     .visual_wrap .visual_tit{top: 20.0rem; left: 50%; transform: translateX(-50%); width: 100%; text-align: center;}
     .visual_wrap .visual_tit h3{font-size: 5.6rem; line-height: 6.4rem; margin-bottom: 3.2rem;}
-    .history{margin-bottom: 24.0rem;}
+    .history{margin-bottom: 24.0rem; word-break: keep-all;}
     .history .inner{padding: 0px 56px;}
     .history .more > div > div img{right: -4.3rem;}    
     .history .history_slide .swiper-wrapper{height: 42.0rem;}
