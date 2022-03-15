@@ -26,16 +26,18 @@ function banner_slide(){
   }
 
 function history_slide($target,$target2,$target3){
-  var swiper = new Swiper($target, {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    observer:true,
-    observeParent:true,
-    navigation: {
-      nextEl: $target2,
-      prevEl: $target3 ,
-    },
-  });
+  if($(window).outerWidth() >= 1025){
+    var swiper = new Swiper($target, {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      observer:true,
+      observeParent:true,
+      navigation: {
+        nextEl: $target2,
+        prevEl: $target3 ,
+      },
+    });
+  }
   if($(window).outerWidth() < 1024){
     var swiper = new Swiper($target, {
       slidesPerView: 3,
