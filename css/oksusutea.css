@@ -82,7 +82,7 @@ body{background: url("../images/oksusutea_bg_02.png") no-repeat bottom -500px ce
     .itro .img_box{width: 100%; margin: 0; margin-bottom: 5.6rem;}
     .itro .text{width: 100%; text-align: center;}
     .itro .text:after{left: 50%; transform: translateX(-50%); font-size: 7.2rem;}
-    .brand{margin-bottom: 14.4rem;}
+    .brand{overflow: hidden; margin-bottom: 14.4rem;}
     .brand .img_box{flex-direction: column; margin-bottom: 5.6rem;}
     .brand .img_box img:nth-child(1){width: 48%; margin: -10% 2% 0 0;}
     .brand .img_box img:nth-child(2){width: 48%; margin: -45% 52% 20px;}
