@@ -73,7 +73,7 @@ body{background: url("../images/vita500_bg_02.png") no-repeat bottom -500px cent
     body{background: url("../images/vita500_bg_02.png") no-repeat bottom 0px center/190%;}
     .visual_wrap{background: url("../images/vita500_bg_01.png") no-repeat top 32px center/100%; margin-bottom: 14.4rem;}
     .visual_wrap:before{content: ''; clear: both; position: absolute; top: 0; display: block; background-color: #ffb41e; width: 100%; height: 32px;}
-    .visual_wrap .img_box{top: 42.4rem; left: 47%; right: 0; transform: translateX(-50%); width: 115%;}
+    .visual_wrap .img_box{top: 42.4rem; left: 47%; right: 0; transform: translateX(-50%); width: 414px;}
     .concept{margin-bottom: 14.4rem;}
     .concept:after{display: none;}
     .concept .inner{padding: 0rem 20px 0; flex-direction: column}
