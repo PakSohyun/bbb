@@ -38,7 +38,7 @@ function history_slide($target,$target2,$target3){
       },
     });
   }
-  if($(window).outerWidth() < 1024){
+  if(767 < $(window).outerWidth() && $(window).outerWidth() < 1024){
     var swiper = new Swiper($target, {
       slidesPerView: 3,
       spaceBetween: 20,
