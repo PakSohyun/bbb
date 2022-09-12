@@ -41,19 +41,23 @@ function slide(){
             var $length = $(".main_slide .slide").length/3;
             $(".slide_wrap").css("transform","translateY("+($height*$length)+"px)");
             
-            $("body").on("mousewheel", function (event) {
+            $(".arrow .arrow_l").click(function(){   
                 if(moved){
                     moved = false;
-                    var $mousewheel = event.originalEvent.wheelDelta;            
-                    var $ypos; 
-                    
-                    if($mousewheel == -120){
-                        i++;                
-                    }if($mousewheel == 120){
-                        i--;
-                    }; 
-                    
-                    $ypos = $height * (i-1);     
+                    i++; 
+                    slide_i();
+                }  
+            });
+            $(".arrow .arrow_r").click(function(){   
+                if(moved){
+                    moved = false;
+                    i--; 
+                    slide_i();
+                }  
+            }); 
+
+            function slide_i(){
+                $ypos = $height * (i-1);     
                     $(".slide_wrap .main_slide").css("transform","translateY("+$ypos+"px)"); 
                     $(".slide_wrap .main_slide").css("transition","1s"); 
                     $("main .sec").stop().removeClass("active");
@@ -75,6 +79,20 @@ function slide(){
                         }
                         moved = true;
                     }, 1000);
+            }
+
+            $("body").on("mousewheel", function (event) {
+                if(moved){
+                    moved = false;
+                    var $mousewheel = event.originalEvent.wheelDelta;            
+                    var $ypos; 
+                    
+                    if($mousewheel == -120){
+                        i++;                
+                    }if($mousewheel == 120){
+                        i--;
+                    }; 
+                    slide_i();                  
                 }
             });                 
         },2500);
