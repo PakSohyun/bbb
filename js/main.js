@@ -2,6 +2,7 @@ $(document).ready(function(){
     control_mouse();
     scroll_page();
     slide();
+    popup();
 });
 
 function control_mouse(){
@@ -12,7 +13,14 @@ function control_mouse(){
 function scroll_page(){
     setTimeout(function(){
         $(".scroll_page").addClass("active");
+        $(".popup").fadeIn();
     },2500);
+}
+
+function popup(){
+    $(".popup").click(function(){
+        $(this).fadeOut();
+    });
 }
 
 var l = 0;

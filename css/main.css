@@ -17,6 +17,14 @@ header h1 span{display: inline-block; text-indent: -99999px;}
 @keyframes scoll_icon {0%{transform: translateY(0px);} 22.5%{transform: translateY(-15px);} 45%{transform: translateY(0px);} 55%{transform: translateY(0px);} 77.5%{transform: translateY(-15px);}  100%{transform: translateY(0px);}}
 .scroll_page.active{display: none;}
 
+.popup{display: none; z-index: 9999; position: absolute; bottom: 6%; left: 4%; background-color: #fff; border-radius: 15px; font-size: 1.6rem; line-height: 2.4rem; text-align: center; box-shadow: rgba(149, 157, 165, 0.25) 0px 6px 20px; animation: popup 0.6s ease-out infinite alternate;;}
+.popup .title{position: relative; display: inline-block; width: 100%; padding: 5px; border-radius: 15px 15px 0 0; background-color: rgb(215, 215, 215);}
+.popup .title:after{position: absolute; right: 15px; top: 50%; transform: translateY(-50%); content: "X"; clear: both; display: inline-block; width: 20px; height: 20px; padding-right: 2px; border-radius: 5px; background-color: #323232; font-size: 12px; color: #fff; line-height: 20px; text-align: center; cursor: pointer;}
+.popup .title p{display: inline-block; letter-spacing: 0px; font-weight: 600;}
+.popup .text{padding: 25px 50px; font-weight: 300;}
+.popup .text span{font-weight: 500;}
+@keyframes popup {0%{transform: translateY(5px);} 100%{transform: translateY(0px);}}
+
 main{width: 100%; height: 100%;}
 main .sec{position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
 main div.inner{position: relative; height: 100%;}
@@ -68,6 +76,13 @@ main .sec_06 .img_box{bottom: 22%; left: 36%;}
 @keyframes bg{0%{transform: translate3d(-12px,0,0);} 50%{transform: translate3d(-12px,-12px,0);} 100%{transform: translate3d(0,-12px,0);}}
 @keyframes bg2{0%{transform: translate3d(12px,0,0);} 50%{transform: translate3d(12px,12px,0);} 100%{transform: translate3d(0,12px,0);}}
 .pagination{display: none;}
+.arrow{width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+.arrow_l,.arrow_r{position: absolute; left: -120px; display: inline-block; width: 38px; height: 38px; border-radius: 100px; background-color: #323232;}
+.arrow_l{top: -28px;}
+.arrow_r{top: 28px;}
+.arrow_l:after,.arrow_r:after{position: absolute; left: 12.2px; content: ''; width: 10px; /* 사이즈 */ height: 10px; /* 사이즈 */ border-top: 3px solid #fff; /* 선 두께 */ border-right: 3px solid #fff; /* 선 두께 */}
+.arrow_l:after{top: 15px; transform: rotate(315deg); /* 각도 */}
+.arrow_r:after{top: 9px; transform: rotate(135deg); /* 각도 */}
 .slide_wrap{position: absolute; top: -3%; left: 50%; margin-left: 21.875%; z-index: 9999; display: flex; flex-direction: column;}
 main .main_slide .slide{position: relative; display: flex; justify-content: center; align-items: center; width: 180px; height: 180px; margin-bottom: 32px; border-radius: 180px;}
 main .main_slide .slide a{position: absolute; top: 0; left: 0; z-index: 99; width: 100%; height: 100%; border-radius: 180px; padding: 64px 0; text-align: center; color: #fff; font-size: 2.0rem; font-weight: 700; line-height: 2.6rem; background-color: rgba(0, 0, 0, 0.6); transition-duration: 0.6s; opacity: 0;}
